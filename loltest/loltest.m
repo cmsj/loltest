@@ -12,7 +12,14 @@
 
 - (NSView *)loadMainView {
     SwiftBridge *bridge = [[SwiftBridge alloc] init];
-    return [bridge getPrefPane];
+    NSView *view = [bridge getPrefPane];
+    
+    self.mainView = view;
+    
+    // FIXME: Not sure why we have to set the size of the frame here, it ought to flow up from SwiftUI, but it doesn't.
+    [self.mainView setFrameSize:NSMakeSize(668, 600)];
+
+    return view;
 }
 
 - (void)mainViewDidLoad
