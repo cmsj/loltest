@@ -25,6 +25,6 @@
 	<key>NSPrefPaneIconLabel</key>
 	<string>loltest</string>
 	<key>NSPrincipalClass</key>
-	<string>loltest</string>
+	<string>LolPrefs</string>
 </dict>
 </plist>
