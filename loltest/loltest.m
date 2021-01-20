@@ -6,8 +6,14 @@
 //
 
 #import "loltest.h"
+#import "loltest-Swift.h"
 
 @implementation loltest
+
+- (NSView *)loadMainView {
+    SwiftBridge *bridge = [[SwiftBridge alloc] init];
+    return [bridge getPrefPane];
+}
 
 - (void)mainViewDidLoad
 {

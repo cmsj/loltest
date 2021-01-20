@@ -11,6 +11,8 @@
 		4F237E2B25B7A7DF00CD4CC3 /* loltest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F237E2A25B7A7DF00CD4CC3 /* loltest.m */; };
 		4F237E2D25B7A7DF00CD4CC3 /* loltest.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4F237E2C25B7A7DF00CD4CC3 /* loltest.tiff */; };
 		4F237E3025B7A7DF00CD4CC3 /* loltest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F237E2E25B7A7DF00CD4CC3 /* loltest.xib */; };
+		4F237E3A25B7A80C00CD4CC3 /* SwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F237E3925B7A80C00CD4CC3 /* SwiftBridge.swift */; };
+		4F237E3D25B7A83D00CD4CC3 /* PrefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F237E3C25B7A83D00CD4CC3 /* PrefsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		4F237E2C25B7A7DF00CD4CC3 /* loltest.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loltest.tiff; sourceTree = "<group>"; };
 		4F237E2F25B7A7DF00CD4CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/loltest.xib; sourceTree = "<group>"; };
 		4F237E3125B7A7DF00CD4CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F237E3825B7A80C00CD4CC3 /* loltest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loltest-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F237E3925B7A80C00CD4CC3 /* SwiftBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBridge.swift; sourceTree = "<group>"; };
+		4F237E3C25B7A83D00CD4CC3 /* PrefsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,9 @@
 				4F237E2C25B7A7DF00CD4CC3 /* loltest.tiff */,
 				4F237E2E25B7A7DF00CD4CC3 /* loltest.xib */,
 				4F237E3125B7A7DF00CD4CC3 /* Info.plist */,
+				4F237E3925B7A80C00CD4CC3 /* SwiftBridge.swift */,
+				4F237E3825B7A80C00CD4CC3 /* loltest-Bridging-Header.h */,
+				4F237E3C25B7A83D00CD4CC3 /* PrefsView.swift */,
 			);
 			path = loltest;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 				TargetAttributes = {
 					4F237E2425B7A7DF00CD4CC3 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -141,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F237E3D25B7A83D00CD4CC3 /* PrefsView.swift in Sources */,
+				4F237E3A25B7A80C00CD4CC3 /* SwiftBridge.swift in Sources */,
 				4F237E2B25B7A7DF00CD4CC3 /* loltest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,13 +284,22 @@
 		4F237E3525B7A7DF00CD4CC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VQCYSNZB89;
 				INFOPLIST_FILE = loltest/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.tenshu.loltest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "loltest/loltest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Debug;
@@ -287,13 +307,21 @@
 		4F237E3625B7A7DF00CD4CC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VQCYSNZB89;
 				INFOPLIST_FILE = loltest/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.tenshu.loltest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "loltest/loltest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Release;
