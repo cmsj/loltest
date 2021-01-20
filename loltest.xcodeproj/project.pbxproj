@@ -7,20 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F237E2925B7A7DF00CD4CC3 /* loltest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F237E2825B7A7DF00CD4CC3 /* loltest.h */; };
-		4F237E2B25B7A7DF00CD4CC3 /* loltest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F237E2A25B7A7DF00CD4CC3 /* loltest.m */; };
 		4F237E2D25B7A7DF00CD4CC3 /* loltest.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4F237E2C25B7A7DF00CD4CC3 /* loltest.tiff */; };
-		4F237E3025B7A7DF00CD4CC3 /* loltest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F237E2E25B7A7DF00CD4CC3 /* loltest.xib */; };
 		4F237E3A25B7A80C00CD4CC3 /* SwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F237E3925B7A80C00CD4CC3 /* SwiftBridge.swift */; };
 		4F237E3D25B7A83D00CD4CC3 /* PrefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F237E3C25B7A83D00CD4CC3 /* PrefsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F237E2525B7A7DF00CD4CC3 /* loltest.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loltest.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F237E2825B7A7DF00CD4CC3 /* loltest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loltest.h; sourceTree = "<group>"; };
-		4F237E2A25B7A7DF00CD4CC3 /* loltest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loltest.m; sourceTree = "<group>"; };
 		4F237E2C25B7A7DF00CD4CC3 /* loltest.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = loltest.tiff; sourceTree = "<group>"; };
-		4F237E2F25B7A7DF00CD4CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/loltest.xib; sourceTree = "<group>"; };
 		4F237E3125B7A7DF00CD4CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F237E3825B7A80C00CD4CC3 /* loltest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loltest-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F237E3925B7A80C00CD4CC3 /* SwiftBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBridge.swift; sourceTree = "<group>"; };
@@ -57,10 +51,7 @@
 		4F237E2725B7A7DF00CD4CC3 /* loltest */ = {
 			isa = PBXGroup;
 			children = (
-				4F237E2825B7A7DF00CD4CC3 /* loltest.h */,
-				4F237E2A25B7A7DF00CD4CC3 /* loltest.m */,
 				4F237E2C25B7A7DF00CD4CC3 /* loltest.tiff */,
-				4F237E2E25B7A7DF00CD4CC3 /* loltest.xib */,
 				4F237E3125B7A7DF00CD4CC3 /* Info.plist */,
 				4F237E3925B7A80C00CD4CC3 /* SwiftBridge.swift */,
 				4F237E3825B7A80C00CD4CC3 /* loltest-Bridging-Header.h */,
@@ -76,7 +67,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F237E2925B7A7DF00CD4CC3 /* loltest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F237E2D25B7A7DF00CD4CC3 /* loltest.tiff in Resources */,
-				4F237E3025B7A7DF00CD4CC3 /* loltest.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,22 +141,10 @@
 			files = (
 				4F237E3D25B7A83D00CD4CC3 /* PrefsView.swift in Sources */,
 				4F237E3A25B7A80C00CD4CC3 /* SwiftBridge.swift in Sources */,
-				4F237E2B25B7A7DF00CD4CC3 /* loltest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4F237E2E25B7A7DF00CD4CC3 /* loltest.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F237E2F25B7A7DF00CD4CC3 /* Base */,
-			);
-			name = loltest.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4F237E3225B7A7DF00CD4CC3 /* Debug */ = {
